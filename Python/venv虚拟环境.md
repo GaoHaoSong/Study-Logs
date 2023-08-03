@@ -22,3 +22,9 @@
 使用winget查找最新版本： `winget search Microsoft.PowerShell`
 
 安装最新版本：`winget install --id Microsoft.Powershell --source winget`
+
+### 导出包以及安装
+导出：`pip freeze > requirements.txt`
+
+安装：`pip install -r requirements.txt`
+
