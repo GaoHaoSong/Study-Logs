@@ -42,7 +42,7 @@ mysql.install_as_MySqldb()
 ```
 python manage.py makemigrations #生成迁移文件
 
-python manage.py magrate #迁移数据库，生成新表
+python manage.py migrate #迁移数据库，生成新表
 ```
 ### 六、添加App的路由
 在主路由下设置
