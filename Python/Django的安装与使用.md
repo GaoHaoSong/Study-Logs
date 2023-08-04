@@ -1,14 +1,14 @@
-### 安装：
+### 一、安装：
 `pip install django`
-### 创建Django项目
+### 二、创建Django项目
 使用Django-admin 来创建项目：
 `django-admin startproject Application_Name`
-### 启动Django项目
+### 三、启动Django项目
 进入项目目录，使用`python manage runserver`来启动项目
-### 创建App
+### 四、创建App
 `python manage.py startapp App_name`
 然后将App_name添加到setting.py的项目APP列表里面
-### 创建数据模型
+### 五、创建数据模型
 ##### 1、在项目下的model里设置数据模型
 ```
 from django.db import models
@@ -44,7 +44,7 @@ python manage.py makemigrations #生成迁移文件
 
 python manage.py magrate #迁移数据库，生成新表
 ```
-### 添加App的路由
+### 六、添加App的路由
 在主路由下设置
 ```
 from django.contrib import admin
@@ -64,7 +64,7 @@ urlpatterns = [
     path('',views.index),
 ]
 ```
-### 设置路由下的views
+### 七、设置路由下的views
 可以在views中操作操作查询数据库并返回页面
 ```
 from django.shortcuts import render
@@ -72,8 +72,8 @@ from django.shortcuts import render
 def index(request):
     return render(request,"index.html",{'取的名称在html渲染使用':数据库对象}) #第三个参数为可选
 ```
-### 设置模板路径
-在主程序的setting.py下修改(templates和App文件夹同目录)
+### 八、设置模板路径
+在主程序的setting.py下修改(templates和App文件夹同目录)存放html文件
 ```
 import os
 ~~~
@@ -91,5 +91,13 @@ TEMPLATES = [
             ],
         },
     },
+]
+```
+### 九、设置静态资源路径
+在主程序的setting.py下修改(static和App文件夹同目录)存放css,js文件
+```
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
 ]
 ```
