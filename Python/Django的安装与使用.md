@@ -44,4 +44,31 @@ python manage.py makemigrations #生成迁移文件
 
 python manage.py magrate #迁移数据库，生成新表
 ```
-### 添加APP的路由
+### 添加App的路由
+在主路由下设置
+```
+from django.contrib import admin
+from django.urls import path,include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('wendu/',include('App_name.urls'))  #设置包含App_name下的urls.py路由文件
+]
+```
+在App路由下设置
+```
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('',views.index),
+]
+```
+### 设置路由下的views
+可以在views中操作操作查询数据库并返回页面
+```
+from django.shortcuts import render
+#数据库对象
+def index(request):
+    render(request,"index.html",{'取的名称在html渲染使用':数据库对象}) #第三个参数为可选
+```
