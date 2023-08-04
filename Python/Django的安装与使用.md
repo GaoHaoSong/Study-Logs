@@ -70,5 +70,26 @@ urlpatterns = [
 from django.shortcuts import render
 #数据库对象
 def index(request):
-    render(request,"index.html",{'取的名称在html渲染使用':数据库对象}) #第三个参数为可选
+    return render(request,"index.html",{'取的名称在html渲染使用':数据库对象}) #第三个参数为可选
+```
+### 设置模板路径
+在主程序的setting.py下修改(templates和App文件夹同目录)
+```
+import os
+~~~
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR),'templates'],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
 ```
