@@ -103,4 +103,6 @@ STATICFILES_DIRS = [
 ```
 ### 十、修改Django时区
 在主程序的setting.py下修改
-`TIME_ZONE = 'Asia/Shanghai'`
+```
+TIME_ZONE = 'Asia/Shanghai'
+```
