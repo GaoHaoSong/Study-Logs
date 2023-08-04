@@ -44,3 +44,4 @@ python manage.py makemigrations #生成迁移文件
 
 python manage.py magrate #迁移数据库，生成新表
 ```
+### 添加APP的路由
