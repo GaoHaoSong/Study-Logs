@@ -4,7 +4,7 @@
 
 3、在LoadModule下添加php信息
 ```
-LoadModule php7_module "D:/Program Files/php/php7apache2_4.dll"       #apache插件信息位置（nts版本不带）
+LoadModule php7_module "D:/Program Files/php/php7apache2_4.dll"       #apache插件信息位置（nts版本不带，选ts版）
 PHPIniDir "D:/Program Files/php"                                      #php位置
 AddType application/x-httpd-php .php .phtml                           #固定写法
 ```
