@@ -29,3 +29,23 @@
 ```mysql -uroot -p```
 
 回车，然后输入上面查询的初始密码
+
+输入修改root密码的语句，此时默认的密码安全校验等级较高，不能设置简单的密码。
+
+```ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Aa_123456' password expire never;```
+
+6、继续执行sql语句，设置允许远程连接
+
+```use mysql```
+
+```update user set user.Host='%'where user.User='root';```
+
+```flush privileges;```
+
+```quit;```
+
+7、开放服务器防火墙3306端口
+
+```firewall-cmd --zone=public --add-port=3306/tcp --permanent```
+
+```firewall-cmd --reload```
