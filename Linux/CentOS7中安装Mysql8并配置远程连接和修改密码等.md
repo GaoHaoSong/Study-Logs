@@ -30,7 +30,7 @@
 
 回车，然后输入上面查询的初始密码
 
-输入修改root密码的语句，此时默认的密码安全校验等级较高，不能设置简单的密码。
+输入修改root密码的语句，此时默认的密码安全校验等级较高，不能设置简单的密码。(把Aa_123456替换成你的密码)
 
 ```ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Aa_123456' password expire never;```
 
