@@ -67,7 +67,7 @@
 
 8.3.登录 mysql -u root
 
-更改密码策略 `set global validate_password_policy=LOW;`
+更改密码策略 `set global validate_password.policy=LOW;`
 
 修改root密码为空
 
