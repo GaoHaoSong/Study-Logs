@@ -49,3 +49,49 @@
 ```firewall-cmd --zone=public --add-port=3306/tcp --permanent```
 
 ```firewall-cmd --reload```
+
+
+
+
+
+
+8、忘记mysql密码的操作：
+
+8.1.修改文件vim /etc/my.cnf
+
+在最后一行加入`skip-grant-tables`  后可以免密登录
+
+8.2.重启mysql :
+
+`systemctl restart mysql `
+
+8.3.登录 mysql -u root
+
+更改密码策略 `set global validate_password_policy=LOW;`
+
+修改root密码为空
+
+`update user set authentication_string='' where user='root';`
+
+注销最后一行免密设置；
+
+8.4.重启mysql :
+
+`systemctl restart mysql ；`
+
+重新登录 `mysql -u root `
+
+修改root密码
+
+`ALTER USER  'root'@'%'  IDENTIFIED BY  '新的密码';`
+
+
+
+
+
+
+
+
+
+
+
