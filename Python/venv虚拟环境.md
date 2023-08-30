@@ -2,10 +2,10 @@
 使用python -m venv venv01  创建venv01下的虚拟环境
 
 在 Windows 上：
-`venv\Scripts\activate`
+`venv01\Scripts\activate`
 
 在 macOS/Linux 上：
-`source venv/bin/activate`
+`source venv01/bin/activate`
 
 
 进入环境后，命令行前会出现（venv01）虚拟环境名称，此时激活虚拟环境成功
