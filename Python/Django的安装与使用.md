@@ -106,3 +106,7 @@ STATICFILES_DIRS = [
 ```
 TIME_ZONE = 'Asia/Shanghai'
 ```
+### 十一、创建超级用户
+```
+python manage.py createsuperuser
+```
