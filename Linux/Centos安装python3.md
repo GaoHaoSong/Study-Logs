@@ -4,3 +4,6 @@
 
 ```sudo yum install python3```
 
+使用以下命令卸载Python3
+
+```sudo yum remove python3```
