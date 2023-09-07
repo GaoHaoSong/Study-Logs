@@ -24,23 +24,23 @@
 
 4、在CentOS 7上安装 OpenSSL 1.1.x
 
+卸载老版本
+
+```sudo yum remove openssl```
+
 ```wget https://www.openssl.org/source/openssl-1.1.1u.tar.gz```
 
 ```tar zxvf ./openssl-1.1.1u.tar.gz```
 
-```./config --prefix=/usr/local/openssl1.1.1```
+```./config```
 
-```make && make install```
+```make && sudo make install```
 
-备份旧的 OpenSSL 软链接
+```sudo echo /usr/local/lib64/ >> /etc/ld.so.conf.d/common.conf```  #配置so文件的位置
+```sudo echo /usr/local/lib/ >> /etc/ld.so.conf.d/common.conf```  #配置so文件的位置
+```sudo ldconfig```  #启用so文件位置的配置
 
-```sudo mv /usr/bin/openssl /usr/bin/openssl_old```
-
-创建新的软链接
-
-```sudo ln -s /usr/local/openssl1.1.1/bin/openssh /usr/bin/openssl```
-
-验证更新
+验证
 
 ```openssl version```
 
