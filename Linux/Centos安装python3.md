@@ -60,7 +60,7 @@
 
 8、指定python3的安装目录为 /usr/python 并使用ssl模块，指定目录好处是后期删除此文件夹就可以完全删除软件了。
 
-```./configure --prefix=/usr/local/python3.11 --with-openssl=/usr/local/openssl1.1.1 --with-openssl-rpath=auto```
+```./configure --prefix=/usr/local/python3.11 --with-openssl-rpath=auto```
 
 9、编译并安装
 
