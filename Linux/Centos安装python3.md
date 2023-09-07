@@ -56,5 +56,6 @@
 10、更新软链接
 
 ```ln -s /usr/python/bin/python3 /usr/bin/python3```
+
 ```ln -s /usr/python/bin/pip3 /usr/bin/pip3```
 
