@@ -37,7 +37,9 @@
 ```make && sudo make install```
 
 ```sudo echo /usr/local/lib64/ >> /etc/ld.so.conf.d/common.conf```  #配置so文件的位置
+
 ```sudo echo /usr/local/lib/ >> /etc/ld.so.conf.d/common.conf```  #配置so文件的位置
+
 ```sudo ldconfig```  #启用so文件位置的配置
 
 验证
