@@ -34,6 +34,18 @@
 
 ```make && make install```
 
+备份旧的 OpenSSL 软链接
+
+```sudo mv /usr/bin/openssl /usr/bin/openssl_old```
+
+创建新的软链接
+
+sudo ln -s /usr/local/openssl1.1.1 /usr/bin/openssl
+
+验证更新
+
+```openssl version```
+
 5、安装readline-devel，可以解决后期出现的方向键、删除键乱码问题，这里提前避免。
 
 ```yum install readline-devel```
