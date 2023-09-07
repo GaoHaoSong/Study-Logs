@@ -20,7 +20,7 @@
 
 3、安装源码编译需要的编译环境
 
-```sudo yum -y install epel-release wget make cmake gcc bzip2-devel libffi-devel zlib-devel```
+```sudo yum -y install epel-release wget make cmake gcc bzip2-devel libffi-devel zlib-devel perl```
 
 4、在CentOS 7上安装 OpenSSL 1.1.x
 
