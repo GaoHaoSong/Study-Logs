@@ -26,7 +26,13 @@
 
 4、在CentOS 7上安装 OpenSSL 1.1.x
 
-```yum install openssl-devel openssl11 openssl11-devel```
+```wget https://www.openssl.org/source/openssl-1.1.1u.tar.gz```
+
+```tar zxvf ./openssl-1.1.1u.tar.gz```
+
+```./config --prefix=/usr/local/openssl1.1.1```
+
+```make && make install```
 
 5、安装readline-devel，可以解决后期出现的方向键、删除键乱码问题，这里提前避免。
 
@@ -44,7 +50,7 @@
 
 8、指定python3的安装目录为 /usr/python 并使用ssl模块，指定目录好处是后期删除此文件夹就可以完全删除软件了。
 
-```./configure --prefix=/usr/python --with-ssl```
+```./configure --prefix=/usr/local/python3.11 --with-openssl=/usr/local/openssl1.1.1 --with-openssl-rpath=auto```
 
 9、编译并安装
 
@@ -55,7 +61,7 @@
 
 10、更新软链接
 
-```ln -s /usr/python/bin/python3 /usr/bin/python3```
+```ln -s usr/local/python3.11/bin/python3 /usr/bin/python3```
 
-```ln -s /usr/python/bin/pip3 /usr/bin/pip3```
+```ln -s usr/local/python3.11/bin/pip3 /usr/bin/pip3```
 
