@@ -38,7 +38,7 @@
 
 创建新的软链接
 
-```sudo ln -s /usr/local/openssl1.1.1 /usr/bin/openssl```
+```sudo ln -s /usr/local/openssl1.1.1/bin/openssh /usr/bin/openssl```
 
 验证更新
 
