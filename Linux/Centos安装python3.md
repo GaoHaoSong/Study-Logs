@@ -73,7 +73,7 @@
 
 10、更新软链接
 
-```ln -s usr/local/python3.11/bin/python3 /usr/bin/python3```
+```sudo ln -s /usr/local/python3.11/bin/python3 /usr/bin/python3```
 
-```ln -s usr/local/python3.11/bin/pip3 /usr/bin/pip3```
+```sudo ln -s /usr/local/python3.11/bin/pip3 /usr/bin/pip3```
 
