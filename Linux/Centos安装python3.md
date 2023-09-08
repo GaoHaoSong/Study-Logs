@@ -12,7 +12,7 @@
 
 1、下载最新的软件安装包
 
-```wget https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tgz```
+```wget https://www.python.org/ftp/python/3.11.5/Python-3.11.5.tgz```
 
 2、解压缩安装包
 
