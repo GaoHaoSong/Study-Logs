@@ -50,28 +50,23 @@
 
 ```yum install readline-devel```
 
-6、配置构建
 
-```export CFLAGS=$(pkg-config --cflags openssl11)```
-
-```export LDFLAGS=$(pkg-config --libs openssl11)```
-
-7、进入刚解压缩的目录
+6、进入刚解压缩的目录
 
 ```cd ./Python-3.11.0```
 
-8、指定python3的安装目录为 /usr/python 并使用ssl模块，指定目录好处是后期删除此文件夹就可以完全删除软件了。
+7、指定python3的安装目录为 /usr/python 并使用ssl模块，指定目录好处是后期删除此文件夹就可以完全删除软件了。
 
 ```./configure --prefix=/usr/local/python3.11 --with-openssl-rpath=auto```
 
-9、编译并安装
+8、编译并安装
 
 ```make```
 
 ```make install```
 
 
-10、更新软链接
+9、更新软链接
 
 ```sudo ln -s /usr/local/python3.11/bin/python3 /usr/bin/python3```
 
