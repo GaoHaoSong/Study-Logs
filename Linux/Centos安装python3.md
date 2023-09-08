@@ -16,7 +16,7 @@
 
 2、解压缩安装包
 
-```tar -zxvf Python-3.11.0.tgz```
+```tar -zxvf Python-3.11.5.tgz```
 
 3、安装源码编译需要的编译环境
 
