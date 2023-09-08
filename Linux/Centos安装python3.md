@@ -61,9 +61,9 @@
 
 8、编译并安装
 
-```make```
+```sudo make```
 
-```make install```
+```sudo make install```
 
 
 9、更新软链接
