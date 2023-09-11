@@ -93,7 +93,7 @@ TEMPLATES = [
     },
 ]
 ```
-### 九、设置静态资源路径
+### 九、设置静态资源路径(只有在setting.py中debug=True时才生效)
 在主程序的setting.py下修改(static和App文件夹同目录)存放css,js文件
 ```
 STATIC_URL = '/static/'
