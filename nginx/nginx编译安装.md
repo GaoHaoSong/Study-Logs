@@ -2,7 +2,7 @@
 
 ```
 sudo apt-get update
-sudo apt-get install build-essential
+sudo apt-get install build-essential libpcre3 libpcre3-dev libssl-dev zlib1g-dev
 ```
 
 2、进入解压缩后的 Nginx 目录：
