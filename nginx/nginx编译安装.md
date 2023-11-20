@@ -16,6 +16,10 @@ cd nginx-版本号
 ./configure --prefix=/usr/local/nginx
 ```
 这将把 Nginx 安装到 /usr/local/nginx 目录下。
+以下是添加了SSL模块
+```
+./configure --prefix=/usr/local/nginx --with-http_ssl_module
+```
 
 4、执行编译和安装命令：
 运行 make 来编译源代码，然后使用 make install 安装到指定的目录：
