@@ -34,9 +34,9 @@ DATABASES = {
 ##### 3、添加mysql驱动在Django里
 在主程序Application_Name下打开__init__.py并添加：
 ```
-import mysql
+import pymysql
 
-mysql.install_as_MySqldb()
+pymysql.install_as_MySqldb()
 ```
 ##### 4、迁移数据库
 ```
