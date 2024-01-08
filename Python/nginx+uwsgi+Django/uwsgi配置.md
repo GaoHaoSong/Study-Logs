@@ -36,3 +36,13 @@ logto = /home/script/uwsgi.log
 
 # 进程pid
 pidfile = /home/script/uwsgi.pid
+
+
+
+# 启用自动重载选项
+py-autoreload = 1
+
+# 禁用uWSGI的缓存
+no-orphans = true
+disable-logging = true
+lazy-apps = true
